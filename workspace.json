@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "projects": {
+    "sortir": "apps/sortir",
+    "sortir-e2e": "apps/sortir-e2e"
+  }
+}
