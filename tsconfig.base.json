@@ -14,7 +14,9 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@sortir/sortir/core/feature": ["libs/sortir/core/feature/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

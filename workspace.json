@@ -2,6 +2,7 @@
   "version": 2,
   "projects": {
     "sortir": "apps/sortir",
+    "sortir-core-feature": "libs/sortir/core/feature",
     "sortir-e2e": "apps/sortir-e2e"
   }
 }
