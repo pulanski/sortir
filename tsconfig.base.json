@@ -15,7 +15,14 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@sortir/sortir/core/feature": ["libs/sortir/core/feature/src/index.ts"]
+      "@sortir/sortir-shared-ui": ["libs/sortir/shared/ui/src/index.ts"],
+      "@sortir/sortir/bootstrap/ui": ["libs/sortir/bootstrap/ui/src/index.ts"],
+      "@sortir/sortir/core/feature": ["libs/sortir/core/feature/src/index.ts"],
+      "@sortir/sortir/home/data-access": [
+        "libs/sortir/home/data-access/src/index.ts"
+      ],
+      "@sortir/sortir/home/feature": ["libs/sortir/home/feature/src/index.ts"],
+      "@sortir/sortir/home/ui": ["libs/sortir/home/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

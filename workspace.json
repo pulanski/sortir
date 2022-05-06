@@ -2,7 +2,12 @@
   "version": 2,
   "projects": {
     "sortir": "apps/sortir",
+    "sortir-bootstrap-ui": "libs/sortir/bootstrap/ui",
     "sortir-core-feature": "libs/sortir/core/feature",
-    "sortir-e2e": "apps/sortir-e2e"
+    "sortir-e2e": "apps/sortir-e2e",
+    "sortir-home-data-access": "libs/sortir/home/data-access",
+    "sortir-home-feature": "libs/sortir/home/feature",
+    "sortir-home-ui": "libs/sortir/home/ui",
+    "sortir-shared-ui": "libs/sortir/shared/ui"
   }
 }

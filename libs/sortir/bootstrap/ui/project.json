@@ -1,0 +1,43 @@
+{
+  "root": "libs/sortir/bootstrap/ui",
+  "sourceRoot": "libs/sortir/bootstrap/ui/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nrwl/web:rollup",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/sortir/bootstrap/ui",
+        "tsConfig": "libs/sortir/bootstrap/ui/tsconfig.lib.json",
+        "project": "libs/sortir/bootstrap/ui/package.json",
+        "entryFile": "libs/sortir/bootstrap/ui/src/index.ts",
+        "external": ["react/jsx-runtime"],
+        "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
+        "compiler": "babel",
+        "assets": [
+          {
+            "glob": "libs/sortir/bootstrap/ui/README.md",
+            "input": ".",
+            "output": "."
+          }
+        ]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/sortir/bootstrap/ui/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/sortir/bootstrap/ui"],
+      "options": {
+        "jestConfig": "libs/sortir/bootstrap/ui/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

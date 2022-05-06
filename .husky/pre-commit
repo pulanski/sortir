@@ -3,5 +3,7 @@
 # shellcheck source=.husky/_/husky.sh
 . "$(dirname "$0")/_/husky.sh"
 
-nx affected --target=test
-nx affected --target=lint
+# nx affected --target=test
+# nx affected --target=lint
+# nx affected --target=e2e
+# nx affected --target=build
