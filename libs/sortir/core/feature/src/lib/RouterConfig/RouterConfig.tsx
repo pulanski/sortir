@@ -1,7 +1,8 @@
 import styled from '@emotion/styled';
 import { Loading } from '@sortir/sortir-shared-ui';
 import { About } from '@sortir/sortir/about/feature';
-import { Home } from 'libs/sortir/home/feature/src';
+import { Footer } from '@sortir/sortir/home/ui';
+import { Home, Navigation } from 'libs/sortir/home/feature/src';
 import { Suspense } from 'react';
 import {
   BrowserRouter,
@@ -17,19 +18,17 @@ export interface RouterConfigProps { }
 export function RouterConfig(props: RouterConfigProps) {
   return (
     <Suspense fallback={<Loading />}>
+      <Navigation />
       <BrowserRouter>
         <Routes>
-          {/* <Route path="/" element={<LandingPage />}> */}
           <Route path="signup" element={<div>Signup</div>} />
           <Route path="login" element={<div>Login</div>} />
-          {/* </Route> */}
-          <Route path="/" element={<Home />}>
-            <Route path="home" element={<div>Home</div>} />
-          </Route>
+          <Route path="/" element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="*" element={<div>404</div>} />
         </Routes>
       </BrowserRouter>
+      <Footer />
     </Suspense>
   );
 }

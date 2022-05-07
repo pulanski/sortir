@@ -1,10 +1,10 @@
 import styled from '@emotion/styled';
 import { Autocomplete, Paper } from '@mui/material';
-import Navigation from '../Navigation/Navigation';
+import Navigation from '../../../../../shared/ui/src/lib/Navigation/Navigation';
 import SummonerSearch from '../../../../data-access/src/lib/SummonerSearch/SummonerSearch';
 import { Image } from '@chakra-ui/react';
 import { Carousel, Hero } from 'libs/sortir/home/ui/src';
-import Footer from '../../../../ui/src/lib/Footer/Footer';
+import Footer from '../../../../../shared/ui/src/lib/Footer/Footer';
 import divider from './layeredwaves.png';
 
 /* eslint-disable-next-line */
@@ -24,12 +24,10 @@ const StyledImage = styled(Image)`
 export function Home(props: HomeProps) {
   return (
     <StyledHome>
-      <Navigation />
       <Hero />
       <StyledImage src={divider} />
       <Carousel />
       <SummonerSearch />
-      <Footer />
     </StyledHome>
   );
 }
