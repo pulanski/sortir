@@ -2,6 +2,8 @@
   "version": 2,
   "projects": {
     "sortir": "apps/sortir",
+    "sortir-about-feature": "libs/sortir/about/feature",
+    "sortir-about-ui": "libs/sortir/about/ui",
     "sortir-bootstrap-ui": "libs/sortir/bootstrap/ui",
     "sortir-core-feature": "libs/sortir/core/feature",
     "sortir-e2e": "apps/sortir-e2e",

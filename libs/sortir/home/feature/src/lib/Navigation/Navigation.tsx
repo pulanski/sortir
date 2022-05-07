@@ -1,17 +1,18 @@
 import styled from '@emotion/styled';
 import { Collapse, DropdownToggle, Nav, Navbar, NavbarBrand, NavItem, NavLink, UncontrolledDropdown } from 'reactstrap';
 import { FcHome, FcSearch, FcCollaboration, FcConferenceCall, FcNumericalSorting12, FcScatterPlot, FcAbout, FcContacts, FcBiotech } from 'react-icons/fc';
-import { Button, Typography } from '@mui/material';
+import { Button, IconButton, Paper, Typography } from '@mui/material';
 import { ReactElement } from 'react';
 import { FaGithub, FaLinkedin, FaDiscord } from 'react-icons/fa';
 import { AiFillYoutube } from 'react-icons/ai';
+import { BiSun } from 'react-icons/bi';
 import { Image } from '@chakra-ui/react'
 import logo from '../../../../../../../apps/sortir/src/assets/logo.png';
 
 /* eslint-disable-next-line */
 export interface NavigationProps { }
 
-const StyledNavigation = styled.div`
+const StyledNavigation = styled(Paper)`
 `;
 
 const StyledNavbarBrand = styled(NavbarBrand)`
@@ -22,6 +23,12 @@ const StyledNavbarBrand = styled(NavbarBrand)`
 
 const StyledTypography = styled(Typography)`
   margin-left: 0.5rem;
+`;
+
+const StyledNavItem = styled(NavItem)`
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 const StyledFaGithub = styled(FaGithub)`
@@ -128,14 +135,14 @@ export function Navigation(props: NavigationProps) {
             navbar
           >
             {NavigationOptions.map((option) => (
-              <NavItem key={option.linkName}>
+              <StyledNavItem key={option.linkName}>
                 <NavLink href={option.to}>
                   {option.icon}
                   <StyledTypography variant='caption'>
                     {option.linkName}
                   </StyledTypography>
                 </NavLink>
-              </NavItem>
+              </StyledNavItem>
             ))}
           </Nav>
           <NavLink href="https://github.com/pulanski/sortir">
@@ -147,6 +154,9 @@ export function Navigation(props: NavigationProps) {
           <NavLink href="https://youtube.com/channel/fi">
             <StyledAiFillYoutube size={20} />
           </NavLink>
+          <IconButton aria-label="dark-mode">
+            <BiSun size={20} />
+          </IconButton>
         </Collapse>
       </Navbar>
     </StyledNavigation >

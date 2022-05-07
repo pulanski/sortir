@@ -14,6 +14,22 @@ export const darkTheme = createTheme({
   palette: {
     mode: 'dark',
   },
+  typography: {
+    h1: {
+      fontFamily: 'Inter',
+      // fontFamily: 'Segoe UI',
+      fontWeight: 'bold',
+      // lineHeight: '1.5rem',
+      margin: 0,
+    },
+    h4: {
+      fontFamily: 'Inter',
+      fontWeight: 'bold',
+      fontSize: '2rem',
+      // lineHeight: '1.5rem',
+      margin: 0,
+    },
+  },
 });
 
 export const lightTheme = createTheme({
@@ -22,20 +38,20 @@ export const lightTheme = createTheme({
   },
 });
 
-export const DarkModeContext = createContext(false);
+// export const DarkModeContext = createContext(false);
 
 export function App() {
 
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   return (
-    <DarkModeContext.Provider value={darkMode}>
-      <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
-        <StyledApp>
-          <Core />
-        </StyledApp>
-      </ThemeProvider>
-    </DarkModeContext.Provider>
+    // <DarkModeContext.Provider value={darkMode}>
+    <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
+      <StyledApp>
+        <Core />
+      </StyledApp>
+    </ThemeProvider>
+    // </DarkModeContext.Provider>
   );
 }
 
