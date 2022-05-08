@@ -1,12 +1,11 @@
 import { useEffect, useState } from 'react';
 import { animated, useTransition } from 'react-spring';
-import { StyledSpanSubtitle, StyledHeroSubtitle } from './HeroSubtitle.styled';
+import { StyledSpanSubtitle, StyledHeroDescription } from './HeroDescription.styled';
 
 /* eslint-disable-next-line */
-export interface HeroSubtitleProps { }
+export interface HeroDescriptionProps { }
 
-export function HeroSubtitle(props: HeroSubtitleProps) {
-
+export function HeroDescription(props: HeroDescriptionProps) {
   const [isVisible, setIsVisible] = useState(false);
   const transition = useTransition(isVisible, {
     from: {
@@ -38,9 +37,9 @@ export function HeroSubtitle(props: HeroSubtitleProps) {
         transition((style, item) => {
           return item &&
             <animated.div style={style}>
-              <StyledHeroSubtitle variant='body1'>
+              <StyledHeroDescription variant='body1'>
                 A free, open-source, community-driven platform for the <StyledSpanSubtitle> modern League of Legends player.</StyledSpanSubtitle>
-              </StyledHeroSubtitle>
+              </StyledHeroDescription>
             </animated.div>;
         })
       }
@@ -48,4 +47,4 @@ export function HeroSubtitle(props: HeroSubtitleProps) {
   );
 }
 
-export default HeroSubtitle;
+export default HeroDescription;

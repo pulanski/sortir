@@ -1,15 +1,10 @@
-import styled from '@emotion/styled';
 import { Loading } from '@sortir/sortir-shared-ui';
-import { About } from '@sortir/sortir/about/feature';
+import { Navigation } from 'libs/sortir/home/feature/src';
 import { Footer } from '@sortir/sortir/home/ui';
-import { Home, Navigation } from 'libs/sortir/home/feature/src';
 import { Suspense } from 'react';
+import AnimatedRoutes from '../AnimatedRoutes/AnimatedRoutes';
 import {
   BrowserRouter,
-  Link,
-  Route,
-  Routes,
-  useRoutes,
 } from 'react-router-dom';
 
 /* eslint-disable-next-line */
@@ -20,13 +15,7 @@ export function RouterConfig(props: RouterConfigProps) {
     <Suspense fallback={<Loading />}>
       <Navigation />
       <BrowserRouter>
-        <Routes>
-          <Route path="signup" element={<div>Signup</div>} />
-          <Route path="login" element={<div>Login</div>} />
-          <Route path="/" element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="*" element={<div>404</div>} />
-        </Routes>
+        <AnimatedRoutes />
       </BrowserRouter>
       <Footer />
     </Suspense>

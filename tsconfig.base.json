@@ -21,6 +21,12 @@
       ],
       "@sortir/sortir/about/ui": ["libs/sortir/about/ui/src/index.ts"],
       "@sortir/sortir/bootstrap/ui": ["libs/sortir/bootstrap/ui/src/index.ts"],
+      "@sortir/sortir/champions/data-access": [
+        "libs/sortir/champions/data-access/src/index.ts"
+      ],
+      "@sortir/sortir/champions/feature": [
+        "libs/sortir/champions/feature/src/index.ts"
+      ],
       "@sortir/sortir/core/feature": ["libs/sortir/core/feature/src/index.ts"],
       "@sortir/sortir/home/data-access": [
         "libs/sortir/home/data-access/src/index.ts"

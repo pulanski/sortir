@@ -1,7 +1,7 @@
 import logo from '../../../../../../../apps/sortir/src/assets/logo.png';
 import Logo from '../Logo/Logo';
 import { StyledHero } from './Hero.styled';
-import HeroSubtitle from '../HeroSubtitle/HeroSubtitle';
+import HeroDescription from '../HeroDescription/HeroDescription';
 import HeroLead from '../HeroLead/HeroLead';
 
 /* eslint-disable-next-line */
@@ -12,7 +12,7 @@ export function Hero(props: HeroProps) {
     <StyledHero>
       <Logo logo={logo} />
       <HeroLead />
-      <HeroSubtitle />
+      <HeroDescription />
     </StyledHero>
   );
 }

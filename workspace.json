@@ -5,6 +5,8 @@
     "sortir-about-feature": "libs/sortir/about/feature",
     "sortir-about-ui": "libs/sortir/about/ui",
     "sortir-bootstrap-ui": "libs/sortir/bootstrap/ui",
+    "sortir-champions-data-access": "libs/sortir/champions/data-access",
+    "sortir-champions-feature": "libs/sortir/champions/feature",
     "sortir-core-feature": "libs/sortir/core/feature",
     "sortir-e2e": "apps/sortir-e2e",
     "sortir-home-data-access": "libs/sortir/home/data-access",

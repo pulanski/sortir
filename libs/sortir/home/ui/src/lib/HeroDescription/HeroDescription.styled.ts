@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import { Typography } from '@mui/material';
 
-export const StyledHeroSubtitle = styled(Typography)`
+export const StyledHeroDescription = styled(Typography)`
   padding: 1rem 5vw;
   font-weight: 300;
   line-height: 1.5;

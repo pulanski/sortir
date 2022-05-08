@@ -1,61 +1,14 @@
-import styled from '@emotion/styled';
-import { Collapse, DropdownToggle, Nav, Navbar, NavbarBrand, NavItem, NavLink, UncontrolledDropdown } from 'reactstrap';
+import { Collapse, Nav, Navbar, NavLink, UncontrolledDropdown } from 'reactstrap';
 import { FcHome, FcSearch, FcCollaboration, FcConferenceCall, FcNumericalSorting12, FcScatterPlot, FcAbout, FcContacts, FcBiotech } from 'react-icons/fc';
-import { Button, IconButton, Paper, Typography } from '@mui/material';
+import { IconButton, Typography } from '@mui/material';
 import { ReactElement } from 'react';
-import { FaGithub, FaLinkedin, FaDiscord } from 'react-icons/fa';
-import { AiFillYoutube } from 'react-icons/ai';
 import { BiSun } from 'react-icons/bi';
-import { Image } from '@chakra-ui/react'
+
 import logo from '../../../../../../../apps/sortir/src/assets/logo.png';
+import { StyledAiFillYoutube, StyledFaDiscord, StyledFaGithub, StyledImage, StyledMotionDiv, StyledNavbarBrand, StyledNavigation, StyledNavItem, StyledTypography } from './Navigation.styled';
 
 /* eslint-disable-next-line */
 export interface NavigationProps { }
-
-const StyledNavigation = styled(Paper)`
-`;
-
-const StyledNavbarBrand = styled(NavbarBrand)`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
-
-const StyledTypography = styled(Typography)`
-  margin-left: 0.5rem;
-`;
-
-const StyledNavItem = styled(NavItem)`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
-
-const StyledFaGithub = styled(FaGithub)`
-  color: white;
-  &:hover {
-    color: #aba7a7;
-  }
-`;
-
-const StyledFaDiscord = styled(FaDiscord)`
-  color: #5C68F5;
-  &:hover {
-    color: #5c69f59f;
-  }
-`;
-
-const StyledAiFillYoutube = styled(AiFillYoutube)`
-  color: #ff0000;
-  &:hover {
-    color: #ff00009f;
-  }
-`;
-
-const StyledImage = styled(Image)`
-  border-radius: 50% 20% / 10% 40%;
-  margin-right: 0.5rem;
-`;
 
 interface Options {
   linkName: string;
@@ -119,14 +72,21 @@ export function Navigation(props: NavigationProps) {
         expand="xl"
       >
         <StyledNavbarBrand href="/">
-          <StyledImage
-            src={logo}
-            boxSize='2.5rem'
-            alt='Sortir logo'
-          />
-          <Typography variant='h4'>
-            sortir
-          </Typography>
+          <StyledMotionDiv
+            whileHover={{
+              scale: 1.05,
+              transition: { duration: 0.25 },
+            }}
+          >
+            <StyledImage
+              src={logo}
+              boxSize='2.5rem'
+              alt='Sortir logo'
+            />
+            <Typography variant='h4'>
+              sortir
+            </Typography>
+          </StyledMotionDiv>
         </StyledNavbarBrand>
 
         <Collapse navbar>

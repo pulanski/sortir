@@ -17,18 +17,21 @@ export const darkTheme = createTheme({
   typography: {
     h1: {
       fontFamily: 'Inter',
-      // fontFamily: 'Segoe UI',
       fontWeight: 'bold',
-      // lineHeight: '1.5rem',
       margin: 0,
     },
     h4: {
       fontFamily: 'Inter',
       fontWeight: 'bold',
       fontSize: '2rem',
-      // lineHeight: '1.5rem',
       margin: 0,
     },
+    h5: {
+      fontFamily: 'Plus Jakarta Sans',
+      fontWeight: 'bold',
+      fontSize: '1.5rem',
+      margin: 0,
+    }
   },
 });
 
