@@ -19,10 +19,10 @@ export const StyledMotionDiv = styled(motion.div)`
   justify-content: center;
 `;
 
-export const StyledImage = styled(Image)`
-  border-radius: 50% 20% / 10% 40%;
-  margin-right: 0.5rem;
-`;
+// export const StyledImage = styled(Image)`
+//   border-radius: 50% 20% / 10% 40%;
+//   margin-right: 0.5rem;
+// `;
 
 export const HeroTitle = styled(Typography)`
   margin-left: 0.5rem;

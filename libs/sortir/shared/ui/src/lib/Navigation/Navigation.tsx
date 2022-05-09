@@ -3,9 +3,10 @@ import { FcHome, FcSearch, FcCollaboration, FcConferenceCall, FcNumericalSorting
 import { IconButton, Typography } from '@mui/material';
 import { ReactElement } from 'react';
 import { BiSun } from 'react-icons/bi';
+import { Image } from '@chakra-ui/react';
 
 import logo from '../../../../../../../apps/sortir/src/assets/logo.png';
-import { StyledAiFillYoutube, StyledFaDiscord, StyledFaGithub, StyledImage, StyledMotionDiv, StyledNavbarBrand, StyledNavigation, StyledNavItem, StyledTypography } from './Navigation.styled';
+import { StyledAiFillYoutube, StyledFaDiscord, StyledFaGithub, StyledMotionDiv, StyledNavbarBrand, StyledNavigation, StyledNavItem, StyledTypography } from './Navigation.styled';
 
 /* eslint-disable-next-line */
 export interface NavigationProps { }
@@ -78,10 +79,14 @@ export function Navigation(props: NavigationProps) {
               transition: { duration: 0.25 },
             }}
           >
-            <StyledImage
+            <Image
               src={logo}
               boxSize='2.5rem'
               alt='Sortir logo'
+              style={{
+                borderRadius: '50% 20% / 10% 40%',
+                marginRight: '0.5rem'
+              }}
             />
             <Typography variant='h4'>
               sortir

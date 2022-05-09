@@ -1,4 +1,3 @@
-import styled from '@emotion/styled';
 import { useEffect, useState } from 'react';
 import { animated, useTransition } from 'react-spring';
 import { StyledHeroLead, StyledSpanTitle } from './HeroLead.styled';

@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { animated, useTransition } from 'react-spring';
-import { HeroTitle, StyledImage, StyledMotionDiv, StyledNavbarBrand } from './Logo.styled';
+import { HeroTitle, StyledMotionDiv, StyledNavbarBrand } from './Logo.styled';
+import { Image } from '@chakra-ui/react';
 
 export interface LogoProps {
   logo: string;
@@ -43,7 +44,13 @@ export function Logo(logoProps: LogoProps) {
                     transition: { duration: 0.25 },
                   }}
                 >
-                  <StyledImage src={logoProps.logo} boxSize='6rem' alt='Sortir logo' />
+                  <Image
+                    src={logoProps.logo} boxSize='6rem' alt='Sortir logo'
+                    style={{
+                      borderRadius: '50% 20% / 10% 40%',
+                      marginRight: '0.5rem',
+                    }}
+                  />
                   <HeroTitle variant='h1'>
                     sortir
                   </HeroTitle>

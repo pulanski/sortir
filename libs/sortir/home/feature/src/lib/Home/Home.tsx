@@ -15,10 +15,10 @@ const StyledHome = styled(Paper)`
   background-color: #1A202C;
 `;
 
-const StyledImage = styled(Image)`
-  width: 100%;
-  margin-top: -4rem;
-`;
+// const StyledImage = styled(Image)`
+//   width: 100%;
+//   margin-top: -4rem;
+// `;
 
 export function Home(props: HomeProps) {
   return (
@@ -30,7 +30,7 @@ export function Home(props: HomeProps) {
     >
       <StyledHome>
         <Hero />
-        <StyledImage src={divider} />
+        <Image src={divider} />
         <Carousel />
         <SummonerSearch />
       </StyledHome>

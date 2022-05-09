@@ -45,10 +45,10 @@ export const StyledAiFillYoutube = styled(AiFillYoutube)`
   }
 `;
 
-export const StyledImage = styled(Image)`
-  border-radius: 50% 20% / 10% 40%;
-  margin-right: 0.5rem;
-`;
+// export const StyledImage = styled(Image)`
+//   border-radius: 50% 20% / 10% 40%;
+//   margin-right: 0.5rem;
+// `;
 
 export const StyledMotionDiv = styled(motion.div)`
   padding: 0 2vw;
