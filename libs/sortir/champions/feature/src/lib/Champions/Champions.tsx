@@ -1,21 +1,19 @@
 import styled from '@emotion/styled';
-import { Typography } from '@mui/material';
-import { StyledTypography } from 'libs/sortir/about/ui/src/lib/BuiltWithSection/BuiltWithSection.styled';
+import { Paper } from '@mui/material';
 import ChampionSplashGrid from '../../../../data-access/src/lib/ChampionSplashGrid/ChampionSplashGrid';
+import ChampionsLead from '../../../../ui/src/lib/ChampionsLead/ChampionsLead';
 
 /* eslint-disable-next-line */
 export interface ChampionsProps { }
 
-const StyledChampions = styled.div`
-  color: pink;
+const StyledChampions = styled(Paper)`
+  margin: 4rem 0;
 `;
 
 export function Champions(props: ChampionsProps) {
   return (
     <StyledChampions>
-      {/* <SectionTitle variant='h5'>
-        Built with
-      </SectionTitle> */}
+      <ChampionsLead />
       <ChampionSplashGrid />
     </StyledChampions>
   );

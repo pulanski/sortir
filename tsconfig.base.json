@@ -27,6 +27,7 @@
       "@sortir/sortir/champions/feature": [
         "libs/sortir/champions/feature/src/index.ts"
       ],
+      "@sortir/sortir/champions/ui": ["libs/sortir/champions/ui/src/index.ts"],
       "@sortir/sortir/core/feature": ["libs/sortir/core/feature/src/index.ts"],
       "@sortir/sortir/home/data-access": [
         "libs/sortir/home/data-access/src/index.ts"
